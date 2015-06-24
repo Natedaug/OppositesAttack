@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opposites Attack</title>
+
+    <meta charset="utf-8">
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--STYLES-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--STYLES END-->
+  </head>
+
+<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+    
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img style = "max-width: 200px; margin-top: -7px;" src = "images/oppAlabel.png"></a>
+            <button style="color: #F3B02A;"class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex-collapse navbar-right">
+            <div class="collapse navbar-collapse">
+                <ul class = "nav navbar-nav">
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                  <li><a href="music.html"><span class ="glyphicon glyphicon-music"></span>Music</a></li>
+                  <li><a href="video.html"><span class ="glyphicon glyphicon-film"></span> Video</a></li>
+                  <li><a href="tour.html"><span class ="glyphicon glyphicon-star"></span>Tour</a></li>
+                  <li><a href="blog.html"><span class ="glyphicon glyphicon-pencil"></span>Blog</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> About <b class = "caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="bio.html">BIO</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+                    </ul>
+                  </li> 
+                </ul>
+            </div>
+        </div>
+    
+  </nav>
+
+  <body>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+           <div class="linesTwo cont"></div>
+          <div class="body">      
+            <ul class="list">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title">&nbspDear Opposites Attack,</h3>
+          </div>
+            
+            <form id="ajax-contact" method="post" action="mailer.php">
+              <div class="modal-body">
+                  
+                  <div id="form-messages"></div>
+                 
+                  <div class="field">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+
+                  <div class="field">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+
+                  <div class="field">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+                <div class="field" id="submitField">
+                  <button type="submit" class="btn btn-default modalSend">Send</button>
+                </div>
+              </div>
+
+            </form>
+
+          </ul>
+        </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+<h1>Music</h1>
+
+<div class="container">
+    <div class="row clearfix">
+        
+         <div class="col-md-5 col-md-push-7 column align">
+   
+            <img alt="Album Cover" src="images/Opposites.jpg" class = "img-responsive"/>
+            <img alt="Album Cover" src="images/Opposites_0001.jpg" class = "img-responsive imgDisp"/>
+
+        </div>
+
+        <div class="col-md-7 col-md-pull-5 column albumListCol1">
+               
+            <div class="lines"></div>
+
+            <div class="hfeed" data-toggle="tooltip" data-placement="right" title="Click song to play sample.">
+                <article class="entry post">
+                    <header class="entry-header">
+                        <h3 class="entry-title">At The Bottom</h3>
+                    </header>
+                    <div class="entry-content">
+
+                        <div class="body">      
+                          <ul class="list">
+                            <li rel="popover" data-popover-content="#1-1">Poison</li>
+                            <li rel="popover" data-popover-content="#1-2">At The Bottom</li>
+                            <li rel="popover" data-popover-content="#1-3">Rob Looks Like Sam</li>
+                            <li rel="popover" data-popover-content="#1-4">Love of Destruction</li>
+                            <li rel="popover" data-popover-content="#1-5">Designer Douche Bag</li>
+                            <li rel="popover" data-popover-content="#1-6">Never Give Up</li>
+                            <li rel="popover" data-popover-content="#1-7">Moonlight</li>
+                          </ul>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+         </div>
+
+    </div>
+</div>
+<div class="container albumRow2">
+    <div class="row clearfix">
+        <div class="col-md-5 column align">
+                
+            <img alt="Album Cover" src="images/Opposites_Attack.jpg" class = "img-responsive"/>
+                
+            <img alt="Album Cover" src="images/Opposites_Attack_back.jpg" class = "img-responsive imgDisp"/>
+                
+         </div>
+         <div class="col-md-7 column albumListCol2">
+
+            <div class="linesTwo"></div>
+
+            <div class="hfeed">
+                <article class="entry post">
+                    <header class="entry-header">
+                        <h3 class="entry-title">Same Old Changes</h3>
+                    </header>
+                    <div class="entry-content">
+
+                        <div class="body">      
+                          <ul class="list">
+                            <li rel="popover" data-popover-content="#2-1">Dark Day's Dead Night's</li>
+                            <li rel="popover" data-popover-content="#2-2">Suicide King</li>
+                            <li rel="popover" data-popover-content="#2-3">Lead The Way</li>
+                            <li rel="popover" data-popover-content="#2-4">War On The Homefront</li>
+                            <li rel="popover" data-popover-content="#2-5">Skeletons In Your Closet</li>
+                            <li rel="popover" data-popover-content="#2-6">Dirty Socks</li>
+                            <li rel="popover" data-popover-content="#2-7">Won't Fail</li>
+                            <li rel="popover" data-popover-content="#2-8">Jose</li>
+                            <li rel="popover" data-popover-content="#2-9">Same Old Changes</li>
+                            <li rel="popover" data-popover-content="#2-10">Moonlight</li>
+                          </ul>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+    <div id="footer"
+      <div class="container">
+        <footer class="footer pull-right">
+          <div>
+            <span>
+            <a href = "https://www.facebook.com/opposites.attack/">
+                <img src="images/FB-f-Logo__white_29.png" style="padding: 10px">
+            </a>
+            <a href = "https://www.reverbnation.com/oppositesattack">
+                <img src="images/reverbnation_logo_dark_mono.png" style="padding: 10px">
+            </a>
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>  
+
+<div id="1-1" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/01_Track_01_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-2" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/02_Track_02_1_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-3" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/03_Track_03_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-4" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/04_Track_04_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-5" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/05_Track_05_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-6" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/06_Track_06_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="1-7" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/07_Track_07_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<div id="2-1" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/01_Dark_Days_Dead_Nights_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-2" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/02_Suicide_King_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-3" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/03_Lead_The_Way_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-4" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/04_War_On_The_Homefront_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-5" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/05_Skeletons_In_Your_Closet_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-6" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/06_Dirty_Socks_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-7" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/07_Won't_Fall_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-8" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/08_Jose_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-9" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/09_Same_Old_Changes_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+<div id="2-10" class="hide">
+  <audio controls="controls"> 
+    <source src="audio/10_Moonlight_sample.mp3">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('[rel="popover"]').popover({
+                container: 'body',
+                html: true,
+                content: function () {
+                    var clone = $($(this).data('popover-content')).removeClass('hide');
+                    return clone;
+                }
+            }).click(function(e) {
+                e.preventDefault();
+            });
+
+            $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+        });
+    </script>
+    <!--SCRIPTS END-->
+  </body>
+</html>

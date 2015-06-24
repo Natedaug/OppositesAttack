@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Opposites Attack</title>
+
+    <meta charset="utf-8">
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--STYLES-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--STYLES END-->
+  </head>
+
+  
+  <nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation">
+    
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img style = "max-width: 200px; margin-top: -7px;" src = "images/oppAlabel.png"></a>
+            <button style="color: #F3B02A;"class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex-collapse navbar-right">
+            <div class="collapse navbar-collapse">
+                <ul class = "nav navbar-nav">
+                  <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                  <li><a href="music.html"><span class ="glyphicon glyphicon-music"></span>Music</a></li>
+                  <li><a href="video.html"><span class ="glyphicon glyphicon-film"></span> Video</a></li>
+                  <li><a href="tour.html"><span class ="glyphicon glyphicon-star"></span>Tour</a></li>
+                  <li><a href="blog.html"><span class ="glyphicon glyphicon-pencil"></span>Blog</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> About <b class = "caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="bio.html">BIO</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
+                    </ul>
+                  </li> 
+                </ul>
+            </div>
+        </div>
+    
+  </nav>
+
+  <body>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+           <div class="linesTwo cont"></div>
+          <div class="body">      
+            <ul class="list">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title">&nbspDear Opposites Attack,</h3>
+          </div>
+            
+            <form id="ajax-contact" method="post" action="mailer.php">
+              <div class="modal-body">
+                  
+                  <div id="form-messages"></div>
+                 
+                  <div class="field">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                  </div>
+
+                  <div class="field">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" required>
+                  </div>
+
+                  <div class="field">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" required></textarea>
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default modalClose" data-dismiss="modal">Close</button>
+                <div class="field" id="submitField">
+                  <button type="submit" class="btn btn-default modalSend">Send</button>
+                </div>
+              </div>
+
+            </form>
+
+          </ul>
+        </div>
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+<div class="container">
+      <center><h1>BIO</h1></center>
+</div>
+
+
+<div class="container" stlye="padding: 80px">
+  <div class="row clearfix">
+    <div class="col-md-6 column">
+      <div class="container-fluid">
+
+        <div class="hfeed">
+          <article class="entry post imagePost">
+            <div class="entry-content">
+
+              <img src="images/family.jpg" class = "img-responsive">
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-6 column">
+      <div class="container-fluid">
+
+        <div class="hfeed valign2">
+          <article class="entry post imagePost">
+            <div class="entry-content">
+              <p>Opposites Attack stands for friends, family and rock and roll. They are a native St. Louis punk rock band and they've been going strong for over 9 years. They've put out 4 CD's and have been on numerous compilations. They are currently working on a new CD and have a lot of new shows in the works. See ya soon at their next show!</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+    <div id="footer"
+      <div class="container">
+        <footer class="footer pull-right">
+          <div>
+            <span>
+            <a href = "https://www.facebook.com/opposites.attack/"><img src="images/FB-f-Logo__white_29.png" style="padding: 10px"></a>
+            <a href = "https://www.reverbnation.com/oppositesattack"><img src="images/reverbnation_logo_dark_mono.png" style="padding: 10px"></a>
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>  
+
+    
+
+    <!--SCRIPTS-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--SCRIPTS END-->
+  </body>
+</html>
