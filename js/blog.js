@@ -60,22 +60,25 @@
   function add_entry(date,heading,entry) {
 
     var entrytext = "";
-    entrytext += "<div class='CSSTableGenerator'>"
-    entrytext += "<table>";
+    entrytext += "<div class='hfeed valign2'><article class='entry post imagePost'><div class='entry-content'>";
+   
+    //entrytext += "<table class='table table-striped'>";
 
-    entrytext += "<tr>";
-    entrytext += "  <td class='bloghead'>";
-    entrytext +=      " [" + date + "] " + heading;
-    entrytext += "  </td>";
-    entrytext += "</tr>";
+    //entrytext += "<tr>";
+    //entrytext += "  <td class='bloghead'>";
+    entrytext += "<p class='blogDate'>[" + date + "]</p>"; 
+    entrytext += "<h3><sample>" + heading + "</sample></h3>";
+    //entrytext += "  </td>";
+    //entrytext += "</tr>";
 
-    entrytext += "<tr>";
-    entrytext += "  <td>";
+    //entrytext += "<tr>";
+    entrytext += "  <p>";
     entrytext +=      entry;
-    entrytext += "  </td>";
-    entrytext += "</tr>";
-    entrytext += "</table>"
-    entrytext += "</div>"
+    entrytext += "  </p>";
+    //entrytext += "</tr>";
+   // entrytext += "</table>"
+   
+    entrytext += "&nbsp</div></article><div>";
     return entrytext;
 
   }
@@ -115,7 +118,6 @@
 
 //page_header();
 
-//post to facebook?
 //my code
 var $overlay = $("<div id = 'overlay'></div>");
 var $postForm;
@@ -152,6 +154,7 @@ $("#write").click(function(e){
 
 var url = "/blog.json"; 
 var date ="xx/xx/xxxx"
+var entry;
 /*reads everrything from the blog.json file
 $.getJSON(url, function (response) {
   $.each(response, function(index, blog){
@@ -165,7 +168,9 @@ $.getJSON(url, function (response) {
 $("form").submit(function(e){
   e.preventDefault();
   $overlay.hide();
-  $("#blogbody").append(add_entry(date,this.heading.value,this.message.value));
+  entry = add_entry(date,this.heading.value,this.message.value);
+  console.log(entry);
+  $("#blogBody").prepend(add_entry(date,this.heading.value,this.message.value));
   this.heading.value = "";
   this.message.value = "";
   /*var formData = $(this).serialize();

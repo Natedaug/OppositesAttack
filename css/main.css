@@ -31,7 +31,12 @@ p{
 	font-family: gunny, courier, monospace;
   margin-bottom: auto;
 }
-
+.blogDate{
+  text-align: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  color: rgb(51, 51, 51);
+}
 .modal-title{
   font-family: gunny, courier, monospace;
   padding-left: 25px;
